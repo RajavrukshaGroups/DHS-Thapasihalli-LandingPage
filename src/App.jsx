@@ -1,13 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
+import Header from './components/header';
+import Banner from './banner/banner';
 
+import Amenities from './components/amenities';
 function App() {
    return (
-     <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <>
+    <Header/>
+    <Banner/>
+    <Amenities />
+
+ {/* <div className="flex w-full gap-4"> */}
+  {/* Image Section */}
+  {/* <div className="w-1/2">
+    <img
+      src="https://i.pinimg.com/736x/d4/79/e4/d479e44fca1d23b9e5c9dcc3ba9dad86.jpg"
+      alt="Amenities"
+      className="w-full h-auto object-cover"
+    />
+  </div> */}
+
+  {/* Amenities Component */}
+  {/* <div className="w-1/2 pt-16">
+    <Amenities />
+  </div> */}
+{/* </div> */}
+    </>
+  
    )
 }
 
