@@ -1,77 +1,96 @@
 "use client"
 
 import { TreePalm, House, WavesLadder, Baby, Cctv, MessageSquare, CircuitBoard, Droplets, Barrel } from "lucide-react"
-import bgimg from "../assets/about-bg-home-page.078221e9cadd9fda2ffe.png"
+import bgimg from "../assets/about-bg-home-page.078221e9cadd9fda2ffe.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPersonSwimming } from '@fortawesome/free-solid-svg-icons';
+import nightClub from "../assets/night-club.png"
+import waterpipe from "../assets/faucet.png"
+import overheadtank from "../assets/water-tank.png"
+import wastewater from "../assets/waste-water.png"
+import treeimage from "../assets/tree.png"
+
+import { TbDeviceCctvFilled } from "react-icons/tb";
+import { FcElectricity } from "react-icons/fc";
+
+
+// import { faPersonSledding } from '@fortawesome/free-solid-svg-icons';
+import { FaSnowboarding } from "react-icons/fa";
 const Amenities = () => {
   const data = [
     {
       id: 1,
-      title: "DATA 01",
-      icon: <TreePalm className="w-9 h-9 text-gray-600" />,
+      title: "Swimming pool",
+      // icon: <TreePalm className="w-9 h-9 text-gray-600" />,
+      icon: <FontAwesomeIcon icon={faPersonSwimming} size="2x"  />
+,
       color: "border-orange-400",
       triangleColor: "border-b-orange-400",
       angle: 0, // 0 degrees
     },
     {
       id: 2,
-      title: "DATA 02",
-      icon: <House className="w-9 h-9 text-gray-600" />,
+      title: "Children's play area",
+      icon: <FaSnowboarding className="w-9 h-9 text-gray-600" />
+      // icon: <FontAwesomeIcon icon={faPersonSledding} />
+,
       color: "border-green-400",
       triangleColor: "border-b-green-400",
       angle: 40, // 40 degrees
     },
     {
       id: 3,
-      title: "DATA 03",
-      icon: <WavesLadder className="w-9 h-9 text-gray-600" />,
+      title: "24/7 CCTV Surveillance",
+      icon: <TbDeviceCctvFilled className="w-9 h-9 text-gray-600" />,
       color: "border-pink-400",
       triangleColor: "border-b-pink-400",
       angle: 80, // 80 degrees
     },
     {
       id: 4,
-      title: "DATA 04",
-      icon: <Baby className="w-9 h-9 text-gray-600" />,
+      title: "Electrical Supply Lines",
+      icon: <FcElectricity className="w-9 h-9 text-gray-600" />,
       color: "border-purple-400",
       triangleColor: "border-b-purple-400",
       angle: 120, // 120 degrees
     },
     {
       id: 5,
-      title: "DATA 05",
-      icon: <Cctv className="w-9 h-9 text-gray-600" />,
+      title: "Water connection",
+      icon:  <img src={waterpipe} alt="waterpipe"/>,
       color: "border-blue-400",
       triangleColor: "border-b-blue-400",
       angle: 160, // 160 degrees
     },
     {
       id: 6,
-      title: "DATA 06",
-      icon: <MessageSquare className="w-9 h-9 text-gray-600" />,
+      title: "Overhead Tank",
+      icon:  <img src={overheadtank} alt="overheadtank"/>,
       color: "border-gray-400",
       triangleColor: "border-b-gray-400",
       angle: 200, // 200 degrees
     },
     {
       id: 7,
-      title: "DATA 07",
-      icon: <CircuitBoard className="w-9 h-9 text-gray-600" />,
+      title: "Sewage lines",
+      icon: <img src={wastewater} alt="night"/>,
       color: "border-yellow-400",
       triangleColor: "border-b-yellow-400",
       angle: 240, // 240 degrees
     },
     {
       id: 8,
-      title: "DATA 08",
-      icon: <Droplets className="w-9 h-9 text-gray-600" />,
+      title: "Landscaped Gardens",
+      icon:  <img src={treeimage} alt="night" />,
       color: "border-indigo-400",
       triangleColor: "border-b-indigo-400",
       angle: 280, // 280 degrees
     },
     {
       id: 9,
-      title: "DATA 09",
-      icon: <Barrel className="w-9 h-9 text-gray-600" />,
+      title: "Clubhouse",
+      // icon: <Barrel className="w-9 h-9 text-gray-600" />,
+      icon: <img src={nightClub} alt="night" />,
       color: "border-red-400",
       triangleColor: "border-b-red-400",
       angle: 320, // 320 degrees
@@ -97,7 +116,7 @@ const Amenities = () => {
 
   return (
     <div style={{backgroundImage:`url(${bgimg})`}} className="flex items-center justify-center min-h pt-20 bg-gray-100 p-4">
-      <div className="relative w-full max-w-[800px] aspect-square md:max-w-[700px] lg:max-w-[600px] xl:max-w-[500px]">
+      <div className="relative w-full max-w-[800px] aspect-square md:max-w-[700px] lg:max-w-[600px] xl:max-w-[416px]">
         {/* Center circle */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/3 h-1/3 rounded-full bg-white shadow-lg flex items-center justify-center z-10">
           <div className="w-[90%] h-[90%] rounded-full border-4 border-gray-200 flex flex-col items-center justify-center">
@@ -137,6 +156,7 @@ const Amenities = () => {
                     className={`w-full h-full rounded-full border-2 ${item.color} flex flex-col items-center justify-center p-2 text-center`}
                   >
                     <div className="bg-gray-200 rounded-full p-4 mb-1">{item.icon}</div>
+                    {/* <div className="bg-gray-200 rounded-full p-4 mb-1"><img src="https://defencehabitat-tapasihalli.defencehousingsociety.com/assets/img/animationIcons/prairie_14263799.gif" alt="" /></div> */}
                   </div>
                        <div className="font-bold text-gray-700 text-sm">{item.title}</div>
                 </div>
