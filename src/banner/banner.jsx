@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react"
 import { LocationEdit } from 'lucide-react';
-import logo from "../assets/bg web.jpg"
+import logo from "../assets/freepik__enhance__image_02_07_25.jpeg.jpg"
 {/* <LocationEdit /> */}
   const Banner = ()=> {
   return (
@@ -78,7 +78,7 @@ import logo from "../assets/bg web.jpg"
 
             {/* CTA Button */}
             <div className="flex lg:pl-48 items-center justify-center  gap-4">
-              <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-6 text-lg rounded-lg">
+              <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 cursor-pointer text-lg rounded-lg">
                 View Properties
               </button>
               <button variant="ghost" size="icon" className="text-red-500 hover:text-red-600">
