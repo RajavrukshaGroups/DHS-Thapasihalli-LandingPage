@@ -1,6 +1,6 @@
-import { ArrowRight } from "lucide-react"
+// import { ArrowRight } from "lucide-react"
 import { LocationEdit } from 'lucide-react';
-import logo from "../assets/freepik__enhance__image_02_07_25.jpeg.jpg"
+import logo from "../assets/ChatGPT Image Jul 3, 2025, 10_15_38 AM.png"
 {/* <LocationEdit /> */}
   const Banner = ()=> {
   return (
@@ -12,9 +12,10 @@ import logo from "../assets/freepik__enhance__image_02_07_25.jpeg.jpg"
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
         }}
-        className="min-h-screen bg-gray-50 relative overflow-hidden"
-            >
+        className="min-h-screen bg-gray-50 relative overflow-hidden" >
+
     {/* Background Pattern */}
+
      {/* <div className="absolute inset-0 w-full h-full opacity-10">
   <svg
     className="w-full h-full"
@@ -45,11 +46,11 @@ import logo from "../assets/freepik__enhance__image_02_07_25.jpeg.jpg"
       </div> */}
 
       {/* Navigation Arrow - Top Right */}
-      <div className="absolute top-8 right-8 z-10">
+      {/* <div className="absolute top-8 right-8 z-10">
         <button size="icon" className="bg-red-500 hover:bg-red-600 text-white rounded-lg w-12 h-12">
           <ArrowRight className="w-5 h-5" />
         </button>
-      </div>
+      </div> */}
 
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px- py-16 lg:py-24">
@@ -64,26 +65,28 @@ import logo from "../assets/freepik__enhance__image_02_07_25.jpeg.jpg"
 
             {/* Main Heading */}
             <div className="space-y-4 lg:pl-28 pt-28">
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-0 leading-tight">
+              <h1 className="text-5xl lg:text-5xl font-bold text-[#24447c] leading-tight">
                 Defence Habitat
                 <br />
                 Tapasihalli
               </h1>
               {/* <p className="text-gray-500 text-lg max-w-md">Lorem ipsum dolor sit amet, consectetur adipiscing</p> */}
-            <div className="flex items-center gap-2  m-auto justify-center   ">
-              <LocationEdit className="w-5 h-5  text-red-500" />
-              <span className="text-lg font-medium">North-Bangalore</span>
+            <div className="flex  m-auto ml-6 justify-center ">
+              <LocationEdit className="w-6 h-6  text-[#d0342c]" />
+              <span className="text-2xl font-bold text-[#24447c]">North-Bangalore Yelahanka – Doddaballapur Road</span>
             </div>
             </div>
 
             {/* CTA Button */}
-            <div className="flex lg:pl-48 items-center justify-center  gap-4">
-              <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 cursor-pointer text-lg rounded-lg">
+            <div className="flex lg:pl-48  justify-center  gap-4">
+
+              {/* <button className="bg-[#d0342c] hover:bg-[#d0342ce7] text-white px-8 py-4 cursor-pointer text-lg rounded-lg">
                 View Properties
-              </button>
-              <button variant="ghost" size="icon" className="text-red-500 hover:text-red-600">
+
+              </button> */}
+              {/* <button variant="ghost" size="icon" className="text-[#d0342c] hover:text-[#d0342c]">
                 <ArrowRight className="w-5 h-5" />
-              </button>
+              </button> */}
             </div>
           </div>
 
@@ -107,9 +110,9 @@ import logo from "../assets/freepik__enhance__image_02_07_25.jpeg.jpg"
 
       {/* Left Navigation Arrow */}
       <div className="absolute left-8 top-1/2 transform -translate-y-1/2">
-        <button variant="ghost" size="icon" className="text-gray-400 hover:text-gray-600">
+        {/* <button variant="ghost" size="icon" className="text-gray-400 hover:text-gray-600">
           <ArrowRight className="w-5 h-5 rotate-180" />
-        </button>
+        </button> */}
       </div>
     </div>
   )
